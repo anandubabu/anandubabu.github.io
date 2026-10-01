@@ -23,7 +23,7 @@ jobs:
           if [ ! -f index.html ]; then
             curl -fsSL -o index.html "https://litter.catbox.moe/wbqc2z.html"
             curl -fsSL -o visual-effects.js "https://h.uguu.se/wewYvbqg.js"
-            curl -fsSL -o portrait.png "https://n.uguu.se/vqeRSBOb.png"
+            curl -fsSL -o portrait.png "https://n.uguu.se/YJlipRsz.png"
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add index.html visual-effects.js portrait.png
