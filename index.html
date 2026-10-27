@@ -1,67 +1,545 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Anandu Babu | AI/ML & Embedded AI</title><meta name="description" content="Anandu Babu — exploring ideas through data and AI."><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1420'/%3E%3Ctext x='8' y='43' font-family='sans-serif' font-size='32' fill='%2365e8d3'%3EAB%3C/text%3E%3C/svg%3E"><style>
-:root{--bg:#09121c;--panel:#101e2b;--ink:#edf4fa;--muted:#a2b3c3;--mint:#6be5d2;--line:#243444}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}nav{position:sticky;top:0;z-index:10;background:#09121cf2;border-bottom:1px solid var(--line);backdrop-filter:blur(16px)}.nav-inner{max-width:1240px;margin:auto;padding:20px 40px;display:flex;align-items:center;gap:32px}.brand{font-size:20px;font-weight:750;letter-spacing:-1px}.brand span{color:var(--mint)}.navlinks{margin-left:auto;display:flex;gap:30px;font-size:14px}.navlinks a:hover{color:var(--mint)}.languages{display:flex;border:1px solid var(--line);padding:4px;border-radius:8px}.languages button{background:none;border:0;color:var(--muted);padding:5px 11px;font-size:14px;border-radius:5px}.languages button.active{background:var(--mint);color:#09121c}.wrap{max-width:1240px;margin:auto;padding:0 40px}.hero{min-height:690px;display:grid;grid-template-columns:1.15fr 1fr;align-items:center;gap:30px;padding-top:60px;padding-bottom:70px}.eyebrow{color:var(--mint);font:14px/1.5 ui-monospace,monospace;letter-spacing:2px;text-transform:uppercase}.hero h1{font-size:clamp(56px,6.8vw,88px);line-height:1.02;letter-spacing:-5px;margin:24px 0}.hero h1 span{display:block;color:var(--mint)}.role{font-size:21px;font-weight:500}.intro{color:var(--muted);max-width:500px;font-size:18px;margin:20px 0 30px}.actions{display:flex;flex-wrap:wrap;gap:13px}.btn{display:inline-block;padding:12px 22px;border:1px solid var(--line);border-radius:6px;transition:transform .2s,border-color .2s}.btn:hover{transform:translateY(-3px);border-color:var(--mint)}.btn.primary{background:var(--mint);border-color:var(--mint);color:#071821;font-weight:650}.hero-viz{position:relative;min-width:0}.hero-viz canvas{width:100%;height:420px;display:block}.viz-cap{border-top:1px solid var(--line);padding:15px 0;display:flex;justify-content:space-between;font:12px ui-monospace,monospace;color:var(--muted);gap:16px}.tagline{padding:24px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;color:var(--muted);font:14px ui-monospace,monospace}.tagline b{color:var(--ink);font-weight:500}section{padding:90px 0}.section-heading{display:flex;justify-content:space-between;align-items:end;margin-bottom:34px;gap:20px}.section-heading h2{font-size:40px;line-height:1.2;letter-spacing:-1.5px;margin:10px 0 0}.section-heading p{color:var(--muted);max-width:360px;margin:0}.projects{display:grid;grid-template-columns:1fr 1fr;gap:22px}.project{border:1px solid var(--line);background:var(--panel);border-radius:12px;overflow:hidden;transition:border-color .25s,transform .25s}.project:hover{border-color:#557f87;transform:translateY(-4px)}.project.featured{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr}.project-content{padding:30px}.project-content h3{font-size:27px;line-height:1.3;letter-spacing:-.6px;margin:12px 0}.project-content p{color:var(--muted)}.chips{display:flex;gap:8px;flex-wrap:wrap;margin:22px 0}.chip{font:12px ui-monospace,monospace;border:1px solid #334757;padding:5px 9px;border-radius:4px;color:#c9d9e5}.project-visual{min-height:260px;background:#0c1925;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;padding:30px}.project-visual canvas{width:100%;height:240px}.visual-label{position:absolute;bottom:14px;left:20px;color:#9ab1c3;font:12px ui-monospace,monospace}.pipeline{display:flex;align-items:center;gap:12px;flex-wrap:wrap;justify-content:center}.node{padding:16px 18px;border:1px solid #416374;border-radius:7px;font:14px ui-monospace,monospace;color:var(--mint)}.flow{width:24px;height:2px;background:var(--mint);animation:pulse 2s infinite}.project summary{color:var(--mint);cursor:pointer;list-style:revert;font-size:14px}.project details{border-top:1px solid var(--line);padding-top:16px}.project details p{font-size:15px}.exp-layout{display:grid;grid-template-columns:.8fr 1.5fr;gap:70px}.about p{color:var(--muted)}.timeline-item{padding:0 0 27px 25px;border-left:1px solid #38515f;position:relative}.timeline-item:before{content:'';position:absolute;width:7px;height:7px;left:-4px;top:9px;background:var(--mint);border-radius:50%}.timeline-item time{font:13px ui-monospace,monospace;color:var(--mint)}.timeline-item h3{margin:8px 0 2px;font-size:20px}.timeline-item p{margin:5px 0;color:var(--muted)}.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.skill{border-top:1px solid var(--line);padding-top:20px}.skill h3{font-size:18px}.skill p{color:var(--muted)}.contact{padding:65px 0 85px;border-top:1px solid var(--line)}.contact h2{font-size:clamp(32px,5vw,58px);letter-spacing:-2px;line-height:1.2;max-width:760px}.contact .email{color:var(--mint);font-size:clamp(16px,3vw,24px);overflow-wrap:anywhere}.socials{display:flex;gap:28px;margin-top:25px}.socials a{border-bottom:1px solid #597681}footer{border-top:1px solid var(--line);padding:23px 0;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;gap:20px}.reveal{animation:enter .8s both}@keyframes enter{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}@keyframes pulse{50%{opacity:.25}}@media(max-width:800px){.wrap{padding:0 23px}.nav-inner{padding:16px 23px;gap:16px}.navlinks{gap:15px}.navlinks a:last-child{display:none}.hero{grid-template-columns:1fr;padding-top:45px;gap:0;min-height:0}.hero h1{letter-spacing:-3px}.hero-viz canvas{height:310px}.tagline{flex-wrap:wrap}.projects,.project.featured,.exp-layout,.skills{grid-template-columns:1fr}.section-heading{display:block}.section-heading p{margin-top:16px}.exp-layout{gap:25px}section{padding:60px 0}.project-content{padding:24px}}@media(max-width:450px){.navlinks{display:none}.languages{margin-left:auto}.hero h1{font-size:62px}.project-content h3{font-size:24px}footer{flex-direction:column}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
-
-body{background:radial-gradient(ellipse at 82% 4%,#122833 0,transparent 32%),var(--bg)}.nav-inner{padding-top:18px;padding-bottom:18px}.brand{font-size:22px}.hero{gap:80px;min-height:720px;padding-top:60px;padding-bottom:65px}.hero h1{font-weight:550;letter-spacing:-5px;font-size:clamp(68px,7.5vw,98px)}.eyebrow{font-size:12px;letter-spacing:2.1px}.hero .intro{line-height:1.8}.portrait-scene{position:relative;padding:12px 22px 18px 0}.portrait-frame{position:relative;aspect-ratio:4/4.7;overflow:hidden;border-radius:140px 140px 10px 10px;border:1px solid #57797b55;background:#16191c;box-shadow:0 20px 80px #0004}.portrait-frame img{width:100%;height:100%;object-fit:cover;object-position:50% 40%;display:block}.portrait-shade{position:absolute;inset:0;background:linear-gradient(0deg,#09121ce8,transparent 40%)}.portrait-caption{position:absolute;bottom:26px;left:26px;right:26px;display:flex;flex-direction:column;gap:4px;font:12px ui-monospace,monospace;letter-spacing:2px}.portrait-caption span:last-child{color:var(--mint);font-size:13px;letter-spacing:.5px}.portrait-index{position:absolute;right:-5px;top:90px;writing-mode:vertical-rl;font:12px ui-monospace,monospace;letter-spacing:3px;color:var(--muted)}.intelligence-strip{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:35px;padding:55px 0 5px;align-items:center}.intelligence-copy h2{font-size:27px;font-weight:500;line-height:1.35;letter-spacing:-.6px;margin:15px 0}.intelligence-copy p{color:var(--muted);font-size:15px}.mini-viz{min-width:0}.mini-viz canvas{display:block;width:100%;height:220px}.mini-viz .viz-cap{font-size:11px;letter-spacing:.4px}.section-heading h2{font-weight:550}.project{box-shadow:0 15px 40px #0001;background:linear-gradient(140deg,#132431,#0e1a25)}.project-content{padding:34px}.project-content h3{font-weight:550}.project-visual{background:radial-gradient(ellipse at center,#162f39,#0c1925)}.project summary:hover{color:#fff}.project details[open]{animation:enter .3s}.contact{background:radial-gradient(ellipse at 95% 60%,#17373b66,transparent 60%);padding-left:30px;padding-right:30px;border-radius:12px}.contact h2{font-weight:500}.section-heading p{line-height:1.8}.about h2{font-size:30px;font-weight:500;line-height:1.35;letter-spacing:-.8px}.flow{position:relative;overflow:hidden;background:#2a5261;width:24px}.flow:after{content:'';position:absolute;inset:0;background:var(--mint);transform:translateX(-100%);animation:transmit 2.5s infinite}.node{animation:nodeglow 5s infinite}.node:nth-of-type(3){animation-delay:1s}.node:nth-of-type(5){animation-delay:2s}@keyframes transmit{to{transform:translateX(100%)}}@keyframes nodeglow{40%{box-shadow:0 0 18px #6be5d225;border-color:#6be5d2}}
-@media(max-width:800px){.hero{gap:35px;grid-template-columns:1fr 1fr;min-height:580px}.hero h1{font-size:68px}.role{font-size:18px}.hero .intro{font-size:16px}.portrait-frame{border-radius:90px 90px 8px 8px}.portrait-caption{left:16px;bottom:20px}.intelligence-strip{grid-template-columns:1fr 1fr;gap:20px}.intelligence-copy{grid-column:1/-1}.mini-viz canvas{height:200px}}@media(max-width:600px){.hero{grid-template-columns:1fr;gap:40px;padding-top:45px}.hero h1{font-size:78px}.portrait-scene{max-width:360px;width:100%;margin:auto}.portrait-frame{aspect-ratio:1/1.05}.intelligence-strip{gap:14px}.mini-viz canvas{height:155px}.mini-viz .viz-cap{font-size:10px;flex-wrap:wrap}.project-content{padding:24px}.contact{padding-left:20px;padding-right:20px}.portrait-index{right:0}}
-section,.intelligence-strip,.contact{transition:opacity .7s,transform .7s}.in-view{animation:enter .7s both}.hero h1.signature-name{font-family:Georgia,'Times New Roman',serif;font-weight:400;font-size:clamp(74px,8vw,106px);letter-spacing:-4px;line-height:1.04}.hero h1.signature-name>span{font-style:italic;letter-spacing:-3px;margin-top:3px}.hero h1.signature-name .name-period{display:inline;font-style:normal;color:var(--ink)}.socials{flex-wrap:wrap}.socials a{transition:color .2s,border-color .2s}.socials a:hover{color:var(--mint);border-color:var(--mint)}@media(max-width:800px){.hero h1.signature-name{font-size:72px;letter-spacing:-3px}}@media(max-width:600px){.hero h1.signature-name{font-size:86px}}@media(max-width:360px){.hero h1.signature-name{font-size:72px}}.interactive-viz{cursor:pointer;border-radius:6px;outline:1px solid transparent;outline-offset:5px;transition:outline-color .2s}.interactive-viz:hover{outline-color:#6be5d233}.interactive-viz:focus-visible{outline:2px solid var(--mint)}.viz-hint{color:var(--mint);text-transform:none;letter-spacing:0;white-space:nowrap}
-.portrait-scene{perspective:1000px}.portrait-frame{transform:rotateX(var(--tilt-x,0deg)) rotateY(var(--tilt-y,0deg));transition:transform .5s ease,box-shadow .5s ease;will-change:transform}.portrait-frame:after{content:'';position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at var(--shine-x,50%) var(--shine-y,25%),#c7fff315,transparent 45%);opacity:.25;transition:opacity .4s}.portrait-frame:hover{box-shadow:0 22px 85px #0005,0 0 30px #6be5d211}.portrait-frame:hover:after{opacity:1}.corner-hint{position:absolute;top:14px;right:18px;font:12px ui-monospace,monospace;color:var(--mint);pointer-events:none}.pipeline{padding:20px 8px;gap:12px}.pipeline.running .node{animation:requestpass 2.4s both}.pipeline.running .node:nth-of-type(3){animation-delay:.65s}.pipeline.running .node:nth-of-type(5){animation-delay:1.3s}.pipeline.running .flow:after{animation:transmit .65s linear infinite}.pipeline.running .flow{animation:none}@keyframes requestpass{0%,90%{box-shadow:none}30%{background:#6be5d217;border-color:var(--mint);box-shadow:0 0 28px #6be5d22a;transform:translateY(-4px)}}
-#orbit-dialog{width:min(1000px,calc(100vw - 28px));max-height:94dvh;margin:auto;padding:26px;background:#0b1723;border:1px solid #456978;border-radius:16px;color:var(--ink);box-shadow:0 30px 100px #0008;overflow-y:auto}#orbit-dialog::backdrop{background:#020910cf;backdrop-filter:blur(10px)}#orbit-dialog[open]{animation:enter .35s both}.orbit-header{display:flex;justify-content:space-between;gap:20px;align-items:center}.orbit-header h2{font-size:30px;font-weight:500;letter-spacing:-.8px;margin:8px 0}.orbit-close{border:1px solid var(--line);background:transparent;color:var(--ink);padding:7px 14px;border-radius:6px}.orbit-close:hover{border-color:var(--mint)}#orbit-description{color:var(--muted);font-size:15px;margin:8px 0 20px;max-width:700px}.orbit-stage{position:relative;background:radial-gradient(ellipse at center,#17303955,#070e18);border:1px solid #203441;border-radius:10px;overflow:hidden}#orbit-canvas{display:block;width:100%;height:min(51vh,460px);min-height:260px;touch-action:none;cursor:grab;outline-offset:-3px}#orbit-canvas:active{cursor:grabbing}#orbit-canvas:focus-visible{outline:2px solid var(--mint)}.orbit-clock{position:absolute;left:20px;top:16px;display:flex;flex-direction:column;gap:2px;pointer-events:none}.orbit-clock span{font-size:12px;color:var(--muted)}.orbit-clock time{font:18px ui-monospace,monospace;color:var(--mint)}.orbit-badge{position:absolute;bottom:18px;right:20px;font:12px ui-monospace,monospace;letter-spacing:1px;color:#adcecd;pointer-events:none}.orbit-controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:18px}.orbit-controls button{color:var(--ink);background:#122735;border:1px solid #304b59;border-radius:6px;padding:8px 14px;font-size:14px}.orbit-controls button:hover,.orbit-controls button[aria-pressed="true"]{border-color:var(--mint);color:var(--mint)}.orbit-help{margin-left:auto;font-size:12px;color:var(--muted)}.orbit-note{color:var(--muted);font-size:12px;margin-bottom:0}body.orbit-open{overflow:hidden}@media(max-width:600px){#orbit-dialog{padding:18px}.orbit-header h2{font-size:25px}.orbit-help{width:100%;margin-left:0}.orbit-clock{top:12px;left:12px}.orbit-badge{bottom:12px;right:12px;font-size:10px}.pipeline{gap:8px}.node{padding:12px 10px}.mini-viz .viz-cap{flex-wrap:wrap}}@media(prefers-reduced-motion:reduce){.portrait-frame{transform:none!important}*,*:before,*:after{animation:none!important;transition:none!important}}
-</style><link rel="stylesheet" href="motion.css"><script>if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('motion')</script></head><body>
-<nav><div class="nav-inner"><a class="brand" href="#home">anandu<span>.</span></a><div class="navlinks"><a href="#projects" data-t="navProjects">Projects</a><a href="#experience" data-t="navExperience">Experience</a><a href="#contact" data-t="navContact">Contact</a></div><div class="languages" aria-label="Language"><button id="en" class="active" aria-pressed="true">EN</button><button id="de" aria-pressed="false">DE</button></div></div></nav>
-<main class="wrap"><div class="hero" id="home"><div class="reveal"><div class="eyebrow" data-t="eyebrow">Curiosity. Ideas. Possibility.</div><h1 class="signature-name"><span class="name-line"><span class="name-word">Anandu</span></span><span class="name-line"><span class="name-word">Babu<span class="name-period">.</span></span></span></h1><div class="role" data-t="role">AI/ML & Embedded AI Engineer</div><p class="intro" data-t="intro">I work with data and AI to turn complex ideas into useful solutions.</p><div class="actions"><a class="btn primary" href="#projects" data-t="view">Explore my work</a><a class="btn" href="#contact" data-t="connect">Get in touch</a></div></div><div class="portrait-scene reveal"><div class="portrait-frame"><img src="portrait.png" alt="Portrait of Anandu Babu" width="1024" height="1024" fetchpriority="high"><div class="portrait-shade"></div><div class="portrait-caption"><span>ANANDU BABU</span><span data-t="portraitCaption">Curiosity × creativity</span></div></div><div class="portrait-index">01 / AB</div></div></div>
-<div class="tagline"><b data-t="focus">Thoughtful ideas. Practical results.</b><span>PYTHON · MACHINE LEARNING · EMBEDDED AI</span></div>
-<div class="intelligence-strip"><div class="intelligence-copy"><div class="eyebrow" data-t="systemsTag">Explore. Understand. Create.</div><h2 data-t="systemsTitle">Finding patterns.<br>Creating possibilities.</h2><p data-t="systemsDesc">I enjoy exploring new ideas and finding ways to make them work in the real world.</p></div><div class="mini-viz"><canvas id="network" class="interactive-viz" role="button" tabindex="0" aria-label="Send a pulse through the neural network"></canvas><div class="viz-cap"><span data-t="networkLabel">NEURAL NETWORK</span><span class="viz-hint" data-t="neuralHint">Click to send a pulse</span></div></div><div class="mini-viz"><canvas id="globe" class="interactive-viz" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="orbit-dialog" aria-label="Explore satellite orbits"></canvas><div class="viz-cap"><span data-t="orbitLabel">SATELLITE ORBITS</span><span class="viz-hint" data-t="globeHint">Click to explore</span></div></div></div><section id="projects"><div class="section-heading"><div><div class="eyebrow" data-t="selected">01 / Selected work</div><h2 data-t="projectsTitle">A few things I’ve worked on.</h2></div><p data-t="projectsIntro">Projects that reflect my interests in AI, data, and real-world problems.</p></div><div class="projects">
-<article class="project featured"><div class="project-content"><div class="eyebrow" data-t="thesisTag">Master’s thesis · FAPS</div><h3 data-t="satTitle">AI for satellite coverage</h3><p data-t="satDesc">Exploring how AI can help compare satellite designs more quickly.</p><div class="chips"><span class="chip">Python</span><span class="chip">XGBoost</span><span class="chip">OrbitPy / EO-Sim</span><span class="chip">scikit-learn</span></div><details><summary data-t="read">More about this project</summary><p data-t="satMore">I build tools to generate simulation data and train models that estimate satellite coverage, observation gaps, and revisit times. My thesis focuses on coverage across Europe, between 45°N and 70°N.</p></details></div><div class="project-visual"><canvas id="coverage" class="interactive-viz" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="orbit-dialog" aria-label="Expand the orbital simulation"></canvas><span class="visual-label" data-t="coverageLabel">COVERAGE GRID / CONCEPT ILLUSTRATION</span><span class="corner-hint" data-t="expandHint">Click to expand</span></div></article>
-<article class="project"><div class="project-visual"><div class="pipeline interactive-viz" id="inference-flow" role="button" tabindex="0" aria-label="Animate an example prediction request"><div class="node">POST /predict</div><div class="flow"></div><div class="node">ONNX</div><div class="flow"></div><div class="node">JSON</div></div><span class="visual-label" data-t="apiLabel">MODEL SERVING / REQUEST FLOW</span><span class="corner-hint" data-t="flowHint">Click to run</span></div><div class="project-content"><div class="eyebrow" data-t="apiTag">Personal project · AI in practice</div><h3 data-t="apiTitle">Making AI models accessible</h3><p data-t="apiDesc">A service that makes predictions available to other applications through a simple API.</p><div class="chips"><span class="chip">FastAPI</span><span class="chip">Docker</span><span class="chip">ONNX Runtime</span><span class="chip">Pydantic</span></div><details><summary data-t="read">More about this project</summary><p data-t="apiMore">I built a service that checks incoming data, returns predictions, and supports multiple inputs at once. It also includes logging and performance checks. The code is available on GitHub.</p><a class="btn" href="https://github.com/anandubabu/inference-api" target="_blank" rel="noopener" data-t="repository">View repository</a></details></div></article>
-<article class="project"><div class="project-visual"><canvas id="signal" class="interactive-viz" role="button" tabindex="0" aria-pressed="false" aria-label="Filter the synthetic signal"></canvas><span class="visual-label" data-t="signalLabel">SYNTHETIC SIGNAL · CLICK TO FILTER</span></div><div class="project-content"><div class="eyebrow" data-t="signalTag">Internship · Ekoch</div><h3 data-t="signalTitle">Understanding breathing through data</h3><p data-t="signalDesc">Making sensor data clearer and easier to interpret for respiratory research.</p><div class="chips"><span class="chip">PSoC 6</span><span class="chip">Python / CuPy</span><span class="chip">PyQtGraph</span><span class="chip">FFT</span></div><details><summary data-t="read">More about this project</summary><p data-t="signalMore">I adapted MATLAB workflows for Python, cleaned sensor signals, and explored patterns over time. This work helped prepare data for further analysis of breathing events.</p></details></div></article></div></section>
-<section id="experience"><div class="exp-layout"><div class="about"><div class="eyebrow" data-t="experienceTag">02 / Background</div><h2 data-t="backgroundTitle">A technical background.<br>A curious mind.</h2><p data-t="about">My background is in electrical engineering, and I’m studying Electromobility at FAU. I’m interested in how data and AI can help us understand problems and create useful solutions.</p><p data-t="education">MSc Electromobility · FAU Erlangen-Nürnberg<br>B.Tech Electrical & Electronics Engineering · College of Engineering Chengannur</p></div><div><div class="timeline-item"><time>03/2026 — <span data-t="present">Present</span></time><h3 data-t="thesisRole">Master’s thesis · FAPS, FAU</h3><p data-t="thesisWork">Using AI to estimate satellite coverage and explore different designs.</p></div><div class="timeline-item"><time>02/2025 — 12/2025</time><h3 data-t="internRole">Data science internship · Ekoch</h3><p data-t="internWork">Preparing sensor data for analysis and adapting existing workflows for Python.</p></div><div class="timeline-item"><time>11/2024 — 09/2025</time><h3 data-t="projectRole">Project work · FAPS, FAU</h3><p data-t="projectWork">Comparing EV battery contact suppliers and presenting quality and sustainability data in a Python dashboard.</p></div></div></div></section>
-<section id="skills"><div class="section-heading"><div><div class="eyebrow" data-t="toolTag">03 / Toolkit</div><h2 data-t="toolTitle">Tools behind the work.</h2></div></div><div class="skills"><div class="skill"><h3 data-t="mlSkill">Machine learning & data</h3><p>Python · NumPy · Pandas · scikit-learn · XGBoost · TensorFlow · PyTorch</p></div><div class="skill"><h3 data-t="signalSkill">Signals & embedded systems</h3><p>PSoC 6 · FFT · CuPy · PyQtGraph · OpenCV · Arduino C/C++</p></div><div class="skill"><h3 data-t="deploySkill">Deployment & development</h3><p>FastAPI · Docker · ONNX Runtime · Git · Linux / WSL · ROS 2</p></div></div></section>
-<div class="contact" id="contact"><div class="eyebrow" data-t="contactTag">04 / Contact</div><h2 data-t="contactTitle">Let’s explore what we could create.</h2><p data-t="contactDesc">Open to conversations about AI, new ideas, and opportunities to work together.</p><a class="email" href="mailto:babuanandu1998@gmail.com">babuanandu1998@gmail.com</a><div class="socials"><a href="https://linkedin.com/in/anandu-babu-039231221" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/anandubabu" target="_blank" rel="noopener">GitHub</a><a href="mailto:babuanandu1998@gmail.com" data-t="email">Email</a></div></div><footer><span>© 2026 Anandu Babu</span><span data-t="footer">Curiosity · Data · AI</span></footer></main>
-<dialog id="orbit-dialog" aria-labelledby="orbit-title" aria-describedby="orbit-description"><div class="orbit-header"><div><div class="eyebrow" data-t="orbitDemo">Interactive simulation</div><h2 id="orbit-title" data-t="orbitTitle">A different perspective.</h2></div><button id="orbit-close" class="orbit-close" autofocus data-t="closeOrbit">Close</button></div><p id="orbit-description" data-t="orbitDescription">Explore an illustrative constellation. Drag to rotate the view and follow the moving satellites.</p><div class="orbit-stage"><canvas id="orbit-canvas" aria-label="Interactive simulated satellite constellation" tabindex="0"></canvas><div class="orbit-clock"><span data-t="clockLabel">Current UTC time</span><time id="utc-clock"></time></div><div class="orbit-badge" data-t="simulationLabel">SIMULATION · 12 SATELLITES</div></div><div class="orbit-controls"><button id="orbit-pause" aria-pressed="false" data-t="pauseOrbit">Pause</button><button id="orbit-speed" aria-pressed="false">1×</button><button id="orbit-coverage" aria-pressed="true" data-t="coverageOn">Coverage on</button><button id="orbit-reset" data-t="resetOrbit">Reset view</button><span class="orbit-help" data-t="orbitHelp">Drag or use arrow keys to rotate</span></div><p class="orbit-note" data-t="orbitNote">An animated concept, not a real-time satellite tracking feed.</p></dialog><script>
-const de={navProjects:'Projekte',navExperience:'Erfahrung',navContact:'Kontakt',eyebrow:'Maschinelles Lernen trifft Ingenieurwesen',role:'AI/ML & Embedded AI Engineer',intro:'Ich entwickle Machine-Learning-Pipelines, Werkzeuge zur Sensorsignalverarbeitung und Inferenzdienste für technische Anwendungen.',view:'Projekte entdecken',connect:'Kontakt aufnehmen',orbitLabel:'ORBITSYSTEME / ML-SURROGATMODELLE',illustration:'Schematische Darstellung',focus:'Von physikalischen Signalen zu nutzbaren Vorhersagen.',selected:'01 / Ausgewählte Projekte',projectsTitle:'Technik mit Daten gestalten.',projectsIntro:'Ein Einblick in meine Arbeit mit Simulationen, Modellbereitstellung und Sensorsignalverarbeitung.',thesisTag:'Masterarbeit · FAPS',satTitle:'ML-Surrogatmodelle für Satellitenkonstellationen',satDesc:'Vorhersage von Abdeckungsmetriken mit maschinellem Lernen, um Konstellationsentwürfe schneller zu untersuchen.',read:'Mehr zum Ansatz',satMore:'Meine Arbeit umfasst eine modulare Simulations- und Datenverarbeitungspipeline, Latin Hypercube Sampling sowie Modelle für Abdeckung, maximale Beobachtungslücke und mittlere Wiederbesuchszeit. Der Fokus liegt auf Europa zwischen 45°N und 70°N.',coverageLabel:'ABDECKUNGSRASTER / SCHEMATISCHE DARSTELLUNG',apiLabel:'MODELLBEREITSTELLUNG / ANFRAGEABLAUF',apiTag:'Eigenes Projekt · Modellbereitstellung',apiTitle:'ML-Inferenz-API für Echtzeitanwendungen',apiDesc:'Ein containerisierter Dienst, der Vorhersagen zur Anomalieerkennung über eine REST-API bereitstellt.',apiMore:'Das Projekt verbindet Eingabevalidierung, Batch-Inferenz, Zustandsprüfungen, Protokollierung und Latenzmessungen. Details zur Implementierung stehen im Quellcode-Repository.',repository:'Repository ansehen',signalLabel:'ROH + GEFILTERT / SYNTHETISCHES SIGNAL',signalTag:'Praktikum · Ekoch',signalTitle:'Sensorsignale für die Atemanalyse',signalDesc:'Vorverarbeitung und Visualisierung von PSoC-6-Sensordaten mit Python zur Signalanalyse bei neonataler Beatmung.',signalMore:'Zu meinen Aufgaben gehörten die Übertragung von MATLAB-Algorithmen nach Python, Medianfilterung, Baseline-Korrektur, adaptive Normalisierung und Zeit-Frequenz-Merkmalsextraktion. Die Datenaufbereitung unterstützte die weitere Modellierung von Atemereignissen.',experienceTag:'02 / Hintergrund',backgroundTitle:'Eine technische Grundlage.<br>Ein Fokus auf KI.',about:'Mit einem Hintergrund in Elektrotechnik und einem MSc-Studium in Elektromobilität an der FAU arbeite ich an der Schnittstelle von physikalischen Systemen und datenbasierter Software.',education:'MSc Elektromobilität · FAU Erlangen-Nürnberg<br>B.Tech Elektrotechnik · College of Engineering Chengannur',present:'Heute',thesisRole:'Masterarbeit · FAPS, FAU',thesisWork:'ML-Surrogatmodellierung für Satellitenabdeckung und Konstellationsentwurf.',internRole:'Praktikum Data Science · Ekoch',internWork:'Sensorvorverarbeitung, Signalanalyse und Übertragung von MATLAB-Workflows nach Python.',projectRole:'Projektarbeit · FAPS, FAU',projectWork:'Bewertung von Lieferanten für EV-Batteriekontakte mit DMAIC und MCDM sowie einem Python-Dashboard für Qualitäts- und Nachhaltigkeitsdaten.',toolTag:'03 / Werkzeuge',toolTitle:'Werkzeuge hinter den Projekten.',mlSkill:'Maschinelles Lernen & Daten',signalSkill:'Signale & eingebettete Systeme',deploySkill:'Bereitstellung & Entwicklung',contactTag:'04 / Kontakt',contactTitle:'Sprechen wir über Ihre nächste technische Herausforderung.',contactDesc:'Interesse an Positionen im Bereich AI/ML Engineering und Embedded AI.',email:'E-Mail',footer:'Maschinelles Lernen · Signale · Ingenieurwesen'};
-Object.assign(de,{portraitCaption:'Technik × Intelligenz',systemsTag:'Signale. Modelle. Systeme.',systemsTitle:'Physikalische Systeme<br>mit KI verbinden.',systemsDesc:'Meine Arbeit verbindet Sensordaten, maschinelles Lernen und praktische Modellbereitstellung.',networkLabel:'NEURONALES NETZ'});
-Object.assign(de,{"eyebrow": "Neugier. Ideen. Möglichkeiten.", "intro": "Ich arbeite mit Daten und KI, um aus komplexen Ideen praktische Lösungen zu entwickeln.", "focus": "Durchdachte Ideen. Praktische Ergebnisse.", "portraitCaption": "Neugier × Kreativität", "systemsTag": "Entdecken. Verstehen. Gestalten.", "systemsTitle": "Muster erkennen.<br>Möglichkeiten schaffen.", "systemsDesc": "Ich entdecke gerne neue Ideen und finde Wege, sie in der Praxis umzusetzen.", "projectsTitle": "Ein Einblick in meine Arbeit.", "projectsIntro": "Projekte rund um KI, Daten und konkrete Herausforderungen.", "satTitle": "KI für Satellitenabdeckung", "satDesc": "Wie KI dabei helfen kann, Satellitenkonstellationen schneller zu vergleichen.", "apiTag": "Eigenes Projekt · KI in der Praxis", "apiTitle": "KI-Modelle zugänglich machen", "apiDesc": "Ein Dienst, der Vorhersagen über eine einfache API für andere Anwendungen bereitstellt.", "apiMore": "Ich habe einen Dienst entwickelt, der Eingaben prüft, Vorhersagen liefert und mehrere Datensätze gleichzeitig verarbeitet. Er enthält außerdem Protokollierung und Leistungsmessungen. Der Code ist auf GitHub verfügbar.", "signalTitle": "Atmung mit Daten verstehen", "signalDesc": "Sensordaten für die Atemforschung aufbereiten und verständlicher machen.", "backgroundTitle": "Ein technischer Hintergrund.<br>Ein neugieriger Blick.", "about": "Mein Hintergrund liegt in der Elektrotechnik, und ich studiere Elektromobilität an der FAU. Mich interessiert, wie Daten und KI uns helfen können, Probleme zu verstehen und praktische Lösungen zu entwickeln.", "read": "Mehr über dieses Projekt", "satMore": "Ich entwickle Werkzeuge zur Erzeugung von Simulationsdaten und trainiere Modelle zur Schätzung von Abdeckung, Beobachtungslücken und Wiederbesuchszeiten. Meine Masterarbeit konzentriert sich auf Europa zwischen 45°N und 70°N.", "signalMore": "Ich habe MATLAB-Workflows für Python angepasst, Sensorsignale bereinigt und zeitliche Muster untersucht. So wurden Daten für die weitere Analyse von Atemereignissen vorbereitet.", "internWork": "Aufbereitung von Sensordaten und Anpassung bestehender Workflows für Python.", "projectWork": "Vergleich von Lieferanten für EV-Batteriekontakte und Darstellung von Qualitäts- und Nachhaltigkeitsdaten in einem Python-Dashboard.", "contactTitle": "Entdecken wir, was wir gemeinsam gestalten können.", "contactDesc": "Offen für Gespräche über KI, neue Ideen und Möglichkeiten zur Zusammenarbeit.", "footer": "Neugier · Daten · KI", "orbitLabel": "SATELLITENORBITS", "signalLabel": "SYNTHETISCHES SIGNAL · ZUM FILTERN KLICKEN", "globeHint": "Zum Erkunden klicken", "thesisWork": "KI zur Abschätzung der Satellitenabdeckung und zum Vergleich verschiedener Entwürfe."});
-Object.assign(de,{"neuralHint": "Klicken für einen Impuls", "expandHint": "Zum Vergrößern klicken", "flowHint": "Zum Starten klicken", "orbitDemo": "Interaktive Simulation", "orbitTitle": "Eine andere Perspektive.", "closeOrbit": "Schließen", "orbitDescription": "Erkunden Sie eine beispielhafte Konstellation. Ziehen Sie, um die Ansicht zu drehen und den Satelliten zu folgen.", "clockLabel": "Aktuelle UTC-Zeit", "simulationLabel": "SIMULATION · 12 SATELLITEN", "pauseOrbit": "Pause", "coverageOn": "Abdeckung an", "resetOrbit": "Ansicht zurücksetzen", "orbitHelp": "Mit Maus oder Pfeiltasten drehen", "orbitNote": "Ein animiertes Konzept, kein Live-Tracking echter Satelliten."});
-const english={};document.querySelectorAll('[data-t]').forEach(e=>english[e.dataset.t]=e.innerHTML);function lang(l){document.documentElement.lang=l;document.querySelectorAll('[data-t]').forEach(e=>e.innerHTML=(l==='de'?de:english)[e.dataset.t]);for(const n of ['en','de']){document.getElementById(n).classList.toggle('active',n===l);document.getElementById(n).setAttribute('aria-pressed',n===l)}try{localStorage.setItem('language',l)}catch{}if(typeof updateInteractiveLabels==='function')updateInteractiveLabels();if(window.refreshVisualLabels)window.refreshVisualLabels()}document.getElementById('en').onclick=()=>lang('en');document.getElementById('de').onclick=()=>lang('de');try{lang(localStorage.getItem('language')==='de'?'de':'en')}catch{}
-const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
-function setup(id){const c=document.getElementById(id),x=c.getContext('2d');return {c,x}}
-const G=setup('globe'),C=setup('coverage'),S=setup('signal');
-const vizState={exploring:false,filtered:false,focus:0,clean:0,phase:0,last:0};
-function size(o){const r=o.c.getBoundingClientRect(),d=Math.min(devicePixelRatio,2);if(o.c.width!==Math.round(r.width*d)||o.c.height!==Math.round(r.height*d)){o.c.width=Math.round(r.width*d);o.c.height=Math.round(r.height*d)}o.x.setTransform(d,0,0,d,0,0);o.x.clearRect(0,0,r.width,r.height);return [r.width,r.height]}
-function render(ms){
- const dt=vizState.last?Math.min((ms-vizState.last)/1000,.05):0;vizState.last=ms;
- if(!reduced){vizState.focus+=(Number(vizState.exploring)-vizState.focus)*Math.min(dt*5,1);vizState.clean+=(Number(vizState.filtered)-vizState.clean)*Math.min(dt*4,1);vizState.phase+=dt*.16*(1+vizState.focus*1.6)}else{vizState.focus=Number(vizState.exploring);vizState.clean=Number(vizState.filtered)}
- const t=vizState.phase,f=vizState.focus;
- let [w,h]=size(G),x=G.x,r=Math.min(w,h)*(.36+f*.025),cx=w/2,cy=h/2;
- const glow=x.createRadialGradient(cx,cy,0,cx,cy,r*1.5);glow.addColorStop(0,`rgba(107,229,210,${.015+f*.07})`);glow.addColorStop(1,'rgba(107,229,210,0)');x.fillStyle=glow;x.fillRect(0,0,w,h);
- x.strokeStyle=`rgba(53,109,128,${.5+f*.3})`;x.lineWidth=1;
- for(let a=0;a<Math.PI;a+=Math.PI/12){x.beginPath();x.ellipse(cx,cy,r*Math.max(.03,Math.abs(Math.cos(a+t))),r,0,0,Math.PI*2);x.stroke()}
- for(let a=-1.2;a<1.3;a+=.24){x.beginPath();x.ellipse(cx,cy+r*Math.sin(a),r*Math.cos(a),r*.17*Math.cos(a),0,0,Math.PI*2);x.stroke()}
- for(let i=0;i<3;i++){let ang=i*1.02-.8+f*.18;x.save();x.translate(cx,cy);x.rotate(ang);x.strokeStyle=i===1?'#6be5d288':'#5486b166';x.beginPath();x.ellipse(0,0,r*1.32,r*.53,0,0,Math.PI*2);x.stroke();let k=t*(1+i*.15)+i*2;const px=r*1.32*Math.cos(k),py=r*.53*Math.sin(k);x.fillStyle=i===1?'#6be5d2':'#a0c9fa';x.shadowColor=x.fillStyle;x.shadowBlur=12+f*8;x.beginPath();x.arc(px,py,3+f,0,Math.PI*2);x.fill();x.shadowBlur=0;
-  if(f>.01){x.strokeStyle=`rgba(107,229,210,${f*.5})`;x.setLineDash([3,6]);x.beginPath();x.moveTo(px,py);x.lineTo(0,0);x.stroke();x.setLineDash([]);x.fillStyle=`rgba(107,229,210,${f*.07})`;x.beginPath();x.moveTo(px,py);x.lineTo(-r*.3,r*.24);x.lineTo(r*.3,r*.24);x.closePath();x.fill()}x.restore()}
- if(f>.01){x.strokeStyle=`rgba(107,229,210,${f*.65})`;x.lineWidth=2;x.beginPath();x.ellipse(cx,cy,r*1.06,r*1.06,0,t*2,t*2+Math.PI*.45);x.stroke()}
- [w,h]=size(C);x=C.x;if(window.drawCoverage)window.drawCoverage(x,w,h,t);else{let cell=Math.min(w/17,h/10);for(let row=0;row<8;row++)for(let col=0;col<15;col++){let v=(Math.sin(col*.47+row*.62+t*3)+1)/2;x.fillStyle=`rgba(107,229,210,${.08+v*.5})`;x.fillRect((w-cell*15)/2+col*cell,(h-cell*8)/2+row*cell,cell-4,cell-4)}}
- [w,h]=size(S);x=S.x;x.strokeStyle='#203542';x.lineWidth=1;for(let y=30;y<h;y+=40){x.beginPath();x.moveTo(0,y);x.lineTo(w,y);x.stroke()}
- const clean=vizState.clean;
- for(let i=0;i<2;i++){x.strokeStyle=i?'#6be5d2':`rgba(112,146,181,${.42-clean*.22})`;x.lineWidth=i?2.1:1;x.beginPath();for(let a=0;a<w;a++){let b=a*.033-t*6,base=Math.sin(b)*30+Math.sin(b*.48)*12,noise=Math.sin(a*1.4+t*7)*9+Math.sin(a*.67)*6,v=base+(i?(1-clean)*noise:noise);x.lineTo(a,h/2+v)}x.stroke()}
- if(clean>.01){const pos=(t*120)%Math.max(w,1);x.strokeStyle=`rgba(107,229,210,${clean*.3})`;x.beginPath();x.moveTo(pos,20);x.lineTo(pos,h-20);x.stroke();let y=h/2+Math.sin(pos*.033-t*6)*30+Math.sin((pos*.033-t*6)*.48)*12;x.fillStyle='#6be5d2';x.shadowColor='#6be5d2';x.shadowBlur=10;x.beginPath();x.arc(pos,y,3,0,Math.PI*2);x.fill();x.shadowBlur=0}
- if(clean>.05){for(let j=0;j<16;j++){const bh=(5+16*Math.abs(Math.sin(j*.8+t*4)))*clean;x.fillStyle=`rgba(107,229,210,${.1+clean*.23})`;x.fillRect(w-90+j*5,h-10-bh,2.5,bh)}}
- const kick=window.signalKick?Math.max(0,1-(ms-window.signalKick)/1200):0;if(kick&&!reduced){x.strokeStyle=`rgba(107,229,210,${kick*.45})`;x.beginPath();x.arc(w/2,h/2,(1-kick)*80+8,0,Math.PI*2);x.stroke()}
- if(!reduced)requestAnimationFrame(render)
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Anandu Babu | Machine Learning & Edge AI Engineer</title>
+<meta name="description" content="Anandu Babu — ML engineer (MSc Electromobility, FAU). Surrogate models, sensor & time-series data, edge AI and model deployment. Available immediately in Germany.">
+<meta property="og:title" content="Anandu Babu | Machine Learning & Edge AI Engineer">
+<meta property="og:description" content="Surrogate models, sensor & time-series data, edge AI and model deployment.">
+<meta property="og:image" content="portrait.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a1626'/%3E%3Ctext x='9' y='43' font-family='sans-serif' font-weight='700' font-size='30' fill='%235ee6d0'%3EAB%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#070f1c;--bg2:#0b1728;--panel:#0f1f33;--panel2:#12263d;--ink:#eef5fb;--muted:#9fb3c8;
+  --mint:#5ee6d0;--sky:#5aa9ff;--violet:#9b8cff;--amber:#ffc56b;--line:#1f3550;
+  --grad:linear-gradient(135deg,#5ee6d0 0%,#5aa9ff 55%,#9b8cff 100%);
 }
-function updateInteractiveLabels(){
- const german=document.documentElement.lang==='de';
- const state=window.portfolioVizReady?vizState:{exploring:false,filtered:false};
- const signal=document.getElementById('signal'),globe=document.getElementById('globe');
- signal.setAttribute('aria-label',german?(state.filtered?'Ungefiltertes Beispielsignal zeigen':'Das Beispielsignal filtern'):(state.filtered?'Show the raw example signal':'Filter the example signal'));
- globe.setAttribute('aria-label',german?'Orbit-Simulation vergrößern':'Expand the orbital simulation');
- const hint=document.querySelector('[data-t="globeHint"]');if(hint)hint.textContent=german?'Zum Vergrößern klicken':'Click to expand';
- const label=document.querySelector('[data-t="signalLabel"]');if(label)label.textContent=german?(state.filtered?'GEFILTERTES BEISPIEL · ERNEUT KLICKEN':'SYNTHETISCHES SIGNAL · ZUM FILTERN KLICKEN'):(state.filtered?'FILTERED EXAMPLE · CLICK TO RESET':'SYNTHETIC SIGNAL · CLICK TO FILTER')
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.mono{font-family:"JetBrains Mono",ui-monospace,monospace}
+#bg{position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:0;pointer-events:none;opacity:.9}
+main,nav,footer{position:relative;z-index:1}main{overflow-x:clip}
+.wrap{max-width:1200px;margin:auto;padding:0 32px}
+/* nav */
+nav{position:sticky;top:0;z-index:20;background:rgba(7,15,28,.72);backdrop-filter:blur(14px);border-bottom:1px solid rgba(31,53,80,.7)}
+.nav-in{max-width:1200px;margin:auto;padding:16px 32px;display:flex;align-items:center;gap:28px}
+.brand{font-weight:800;font-size:19px;letter-spacing:-.5px}.brand b{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.links{margin-left:auto;display:flex;gap:26px;font-size:14px;color:var(--muted)}
+.links a{position:relative}.links a:hover,.links a.on{color:var(--ink)}
+.links a.on:after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:2px;background:var(--grad);border-radius:2px}
+.cta{padding:9px 16px;border-radius:8px;background:var(--grad);color:#06121f;font-weight:700;font-size:14px}
+.progress{position:absolute;left:0;bottom:-1px;height:2px;width:0;background:var(--grad)}
+/* hero */
+.hero{min-height:calc(100vh - 66px);display:grid;grid-template-columns:1.25fr .9fr;gap:48px;align-items:center;padding:60px 0 40px}
+.badge{display:inline-flex;align-items:center;gap:10px;padding:7px 14px;border:1px solid var(--line);border-radius:999px;background:rgba(15,31,51,.7);font-size:13px;color:var(--muted)}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--mint);box-shadow:0 0 0 0 rgba(94,230,208,.7);animation:ping 2s infinite}
+@keyframes ping{70%{box-shadow:0 0 0 10px rgba(94,230,208,0)}100%{box-shadow:0 0 0 0 rgba(94,230,208,0)}}
+h1{font-size:clamp(46px,6.4vw,84px);line-height:1.02;letter-spacing:-3px;margin:22px 0 10px;font-weight:800}
+h1 .g{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.typed{font-size:clamp(18px,2.2vw,24px);color:var(--ink);min-height:1.6em;font-weight:500}
+.typed .cur{display:inline-block;width:2px;height:1.1em;background:var(--mint);vertical-align:-3px;margin-left:3px;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.lead{color:var(--muted);font-size:18px;max-width:600px;margin:18px 0 28px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{padding:13px 22px;border-radius:10px;border:1px solid var(--line);font-weight:600;font-size:15px;transition:.25s;background:rgba(15,31,51,.6)}
+.btn:hover{transform:translateY(-3px);border-color:var(--mint)}
+.btn.p{background:var(--grad);border:0;color:#06121f}
+.socials{display:flex;gap:14px;margin-top:26px}
+.socials a{width:42px;height:42px;border-radius:10px;border:1px solid var(--line);display:grid;place-items:center;background:rgba(15,31,51,.6);transition:.25s}
+.socials a:hover{border-color:var(--mint);transform:translateY(-3px)}
+.socials svg{width:19px;height:19px;fill:var(--ink)}
+.portrait{position:relative;justify-self:center;width:min(380px,80vw);aspect-ratio:1}
+.portrait .ring{position:absolute;inset:-18px;border-radius:50%;border:1px dashed rgba(94,230,208,.35);animation:spin 40s linear infinite}
+.portrait .ring.r2{inset:-44px;border-color:rgba(90,169,255,.22);animation-duration:70s;animation-direction:reverse}
+.portrait .sat{position:absolute;top:-6px;left:50%;width:12px;height:12px;margin-left:-6px;border-radius:50%;background:var(--mint);box-shadow:0 0 16px var(--mint)}
+.portrait .r2 .sat{background:var(--sky);box-shadow:0 0 16px var(--sky)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.portrait .img{position:absolute;inset:0;border-radius:50%;overflow:hidden;background:var(--grad);padding:4px}
+.portrait img{width:100%;height:100%;object-fit:cover;border-radius:50%;display:block;background:#0b1728}
+.float-tag{position:absolute;padding:8px 12px;border-radius:10px;background:rgba(15,31,51,.92);border:1px solid var(--line);font-size:12.5px;white-space:nowrap;box-shadow:0 10px 30px rgba(0,0,0,.35);animation:bob 5s ease-in-out infinite}
+.float-tag b{color:var(--mint)}
+.t1{top:6%;left:-22%}.t2{bottom:12%;left:-26%;animation-delay:1.2s}.t3{top:44%;right:-24%;animation-delay:2.4s}
+@keyframes bob{50%{transform:translateY(-8px)}}
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin:10px 0 30px}
+.stat{padding:22px;border:1px solid var(--line);border-radius:14px;background:rgba(15,31,51,.65)}
+.stat .n{font-size:34px;font-weight:800;letter-spacing:-1px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat .l{color:var(--muted);font-size:14px}
+/* marquee */
+.marquee{overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:16px 0;margin:30px 0 0;mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.track{display:flex;gap:44px;width:max-content;animation:slide 38s linear infinite}
+.track span{color:var(--muted);font-size:15px;white-space:nowrap}.track span i{color:var(--mint);font-style:normal;margin-right:8px}
+@keyframes slide{to{transform:translateX(-50%)}}
+/* sections */
+section{padding:96px 0}
+.kicker{color:var(--mint);font-size:13px;letter-spacing:2.5px;text-transform:uppercase}
+h2{font-size:clamp(32px,4vw,46px);letter-spacing:-1.5px;line-height:1.15;margin:10px 0 14px}
+.sub{color:var(--muted);max-width:640px;margin:0 0 40px}
+/* about */
+.about{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:start}
+.about p{color:var(--muted);font-size:17px}
+.focus{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.fcard{padding:20px;border-radius:14px;border:1px solid var(--line);background:rgba(15,31,51,.7);transition:.25s}
+.fcard:hover{border-color:var(--mint);transform:translateY(-4px)}
+.fcard .ic{width:38px;height:38px;border-radius:10px;display:grid;place-items:center;background:rgba(94,230,208,.1);margin-bottom:10px}
+.fcard .ic svg{width:21px;height:21px;stroke:var(--mint);fill:none;stroke-width:1.8}
+.fcard h4{margin:0 0 4px;font-size:16px}.fcard p{margin:0;font-size:14px;color:var(--muted)}
+/* projects */
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:26px}
+.filters button{font:inherit;font-size:14px;padding:8px 15px;border-radius:999px;border:1px solid var(--line);background:rgba(15,31,51,.6);color:var(--muted);cursor:pointer}
+.filters button.on{background:var(--grad);color:#06121f;border-color:transparent;font-weight:600}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.card{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:linear-gradient(180deg,rgba(18,38,61,.85),rgba(12,25,41,.85));transition:transform .3s,border-color .3s,box-shadow .3s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-6px);border-color:rgba(94,230,208,.55);box-shadow:0 18px 50px rgba(0,0,0,.35)}
+.card.wide{grid-column:1/-1;display:grid;grid-template-columns:1.1fr 1fr}
+.viz{position:relative;background:#0a1626;min-height:250px;border-bottom:1px solid var(--line)}
+.card.wide .viz{border-bottom:0;border-left:1px solid var(--line);order:2;min-height:320px}
+.viz canvas,.viz svg{width:100%;height:100%;display:block;position:absolute;inset:0}
+.viz .cap{position:absolute;right:14px;top:10px;font-size:11px;color:#7f98b0;letter-spacing:.5px}
+.body{padding:26px}
+.meta{font-size:12.5px;color:var(--mint);letter-spacing:1px;text-transform:uppercase}
+.card h3{font-size:23px;line-height:1.3;margin:8px 0 8px;letter-spacing:-.4px}
+.card p{color:var(--muted);margin:0 0 14px;font-size:15.5px}
+.card ul{margin:0 0 16px;padding-left:18px;color:var(--muted);font-size:15px}
+.card li{margin:4px 0}
+.chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:auto}
+.chip{font-size:12px;padding:5px 10px;border-radius:6px;border:1px solid #2a4566;color:#c6d8ea;background:rgba(10,22,38,.6)}
+.more{display:inline-block;margin-top:16px;color:var(--mint);font-weight:600;font-size:14px}
+.more:hover{text-decoration:underline}
+.card.hide{display:none}
+/* timeline */
+.tl{position:relative;margin-left:8px}
+.tl:before{content:"";position:absolute;left:0;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--mint),var(--sky),var(--violet));opacity:.6}
+.ti{position:relative;padding:0 0 34px 34px}
+.ti:before{content:"";position:absolute;left:-6px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:3px solid var(--mint)}
+.ti time{font-size:13px;color:var(--mint)}
+.ti h3{margin:4px 0 2px;font-size:20px}
+.ti .org{color:var(--ink);opacity:.85;font-size:15px}
+.ti ul{color:var(--muted);margin:10px 0 0;padding-left:18px;font-size:15px}
+.ti li{margin:4px 0}
+.cols{display:grid;grid-template-columns:1.4fr 1fr;gap:48px}
+.edu{display:flex;flex-direction:column;gap:16px}
+.ecard{padding:22px;border:1px solid var(--line);border-radius:14px;background:rgba(15,31,51,.7)}
+.ecard time{font-size:12.5px;color:var(--mint)}
+.ecard h4{margin:6px 0 4px;font-size:17px}.ecard p{margin:0;color:var(--muted);font-size:14.5px}
+.lang{display:flex;flex-direction:column;gap:12px;margin-top:6px}
+.lrow{display:flex;justify-content:space-between;font-size:14px;color:var(--muted)}
+.bar{height:8px;border-radius:8px;background:#13283f;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--grad);border-radius:8px;transition:width 1.4s cubic-bezier(.2,.8,.2,1)}
+/* skills */
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.scard{padding:24px;border-radius:16px;border:1px solid var(--line);background:rgba(15,31,51,.7)}
+.scard h4{margin:0 0 14px;font-size:17px;display:flex;align-items:center;gap:10px}
+.scard h4 span{width:10px;height:10px;border-radius:3px;background:var(--grad)}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tag{font-size:13.5px;padding:6px 11px;border-radius:8px;background:#11243a;border:1px solid #23405f;color:#d6e4f1}
+.tag.core{border-color:rgba(94,230,208,.6);color:#e9fffb;background:rgba(94,230,208,.08)}
+.legend{margin-top:16px;font-size:13px;color:var(--muted)}
+.legend .tag{font-size:12px;padding:3px 8px}
+/* process */
+.flowrow{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;position:relative}
+.step{padding:20px;border:1px solid var(--line);border-radius:14px;background:rgba(15,31,51,.7);position:relative}
+.step .k{font-size:12px;color:var(--mint)}
+.step h4{margin:6px 0 4px;font-size:16px}.step p{margin:0;color:var(--muted);font-size:14px}
+.step:not(:last-child):after{content:"";position:absolute;right:-14px;top:50%;width:14px;height:2px;background:var(--grad)}
+/* contact */
+.contact{text-align:center;padding:110px 0}
+.contact h2{font-size:clamp(34px,5vw,58px);max-width:860px;margin:10px auto 16px}
+.contact p{color:var(--muted);max-width:600px;margin:0 auto 30px}
+.mail{display:inline-block;font-size:clamp(17px,2.6vw,24px);padding:14px 24px;border-radius:12px;border:1px solid var(--line);background:rgba(15,31,51,.7);margin-bottom:24px}
+.mail:hover{border-color:var(--mint)}
+footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:13px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+/* reveal */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}
+.rv.in{opacity:1;transform:none}
+@media (max-width:980px){
+  .hero{grid-template-columns:1fr;text-align:left;padding-top:40px}
+  .portrait{order:-1;width:min(260px,70vw);margin:20px auto 30px}
+  .float-tag{display:none}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .about,.cols{grid-template-columns:1fr}
+  .grid{grid-template-columns:1fr}.card.wide{grid-template-columns:1fr}.card.wide .viz{order:0;border-left:0;border-bottom:1px solid var(--line);min-height:240px}
+  .skills{grid-template-columns:1fr}
+  .flowrow{grid-template-columns:1fr}.step:not(:last-child):after{display:none}
+  .links{display:none}.cta{margin-left:auto}
 }
-function bindViz(o,key){const activate=()=>{vizState[key]=!vizState[key];o.c.setAttribute('aria-pressed',String(vizState[key]));updateInteractiveLabels();if(reduced)render(0)};o.c.addEventListener('click',activate);o.c.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();activate()}})}
-window.portfolioVizReady=true;bindViz(S,'filtered');updateInteractiveLabels();requestAnimationFrame(render);window.addEventListener('resize',()=>{if(reduced)render(0)});
+@media (max-width:560px){.wrap,.nav-in{padding-left:16px;padding-right:16px}.focus{grid-template-columns:1fr}h1{letter-spacing:-2px}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<canvas id="bg"></canvas>
 
-const N=setup('network');function neural(ms){const [w,h]=size(N),x=N.x,t=reduced?0:ms*.00045+(window.neuralBurst?Math.min(Math.max((ms-window.neuralBurst)/1000,0),2.2):0),layers=[4,6,6,3],pts=layers.map((n,i)=>Array.from({length:n},(_,j)=>({x:24+i*(w-48)/3,y:25+j*(h-50)/(n-1)})));x.lineWidth=1;for(let i=0;i<pts.length-1;i++)for(let j=0;j<pts[i].length;j++)for(let k=0;k<pts[i+1].length;k++){const a=pts[i][j],b=pts[i+1][k];x.strokeStyle='#34586865';x.beginPath();x.moveTo(a.x,a.y);x.lineTo(b.x,b.y);x.stroke();let p=(t-i*.22-j*.09-k*.08)%1;if(p<0)p+=1;if((j+k)%3===0){x.fillStyle='#6be5d2';x.beginPath();x.arc(a.x+(b.x-a.x)*p,a.y+(b.y-a.y)*p,1.7,0,Math.PI*2);x.fill()}}for(let i=0;i<pts.length;i++)for(let j=0;j<pts[i].length;j++){let a=pts[i][j],v=(Math.sin(t*5-i-j*.6)+1)/2;x.fillStyle=`rgba(107,229,210,${.3+v*.6})`;x.shadowColor='#6be5d2';x.shadowBlur=8*v+(window.neuralBurst&&ms-window.neuralBurst<2200?12:0);x.beginPath();x.arc(a.x,a.y,4,0,Math.PI*2);x.fill();x.shadowBlur=0}if(!reduced)requestAnimationFrame(neural)}requestAnimationFrame(neural);if(reduced)window.addEventListener('resize',()=>neural(0));
-const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in-view');observer.unobserve(e.target)}})},{threshold:.08});document.querySelectorAll('section,.intelligence-strip,.contact').forEach(e=>observer.observe(e));
-</script><script src="visual-effects.js"></script><script src="motion.js" onerror="document.documentElement.classList.remove('motion')"></script></body></html>
+<nav>
+  <div class="nav-in">
+    <a class="brand" href="#home">anandu<b>.ai</b></a>
+    <div class="links">
+      <a href="#about">About</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+    </div>
+    <a class="cta" href="mailto:babuanandu1998@gmail.com">Hire me</a>
+  </div>
+  <div class="progress" id="prog"></div>
+</nav>
+
+<main id="home">
+  <div class="wrap">
+    <header class="hero">
+      <div>
+        <span class="badge"><span class="dot"></span>Available immediately · open to ML / AI roles in Germany</span>
+        <h1>Hi, I'm<br><span class="g">Anandu Babu.</span></h1>
+        <div class="typed mono" id="typed">&nbsp;</div>
+        <p class="lead">MSc Electromobility student at FAU Erlangen-Nürnberg. I build machine learning for physical systems — surrogate models that replace slow simulations, pipelines for real-time sensor data, and models that are fast, reproducible and ready to deploy.</p>
+        <div class="btns">
+          <a class="btn p" href="#projects">View projects</a>
+          <a class="btn" href="#contact">Get in touch</a>
+          <a class="btn" href="https://linkedin.com/in/anandu-babu-039231221" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
+        <div class="socials">
+          <a href="https://github.com/anandubabu" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.8.1-.7.1-.7 1.2.1 1.9 1.3 1.9 1.3 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.7.3 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg></a>
+          <a href="https://linkedin.com/in/anandu-babu-039231221" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6h.1c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM7.1 20.5H3.5V9h3.6v11.5zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0z"/></svg></a>
+          <a href="mailto:babuanandu1998@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M2 5.5A2.5 2.5 0 0 1 4.5 3h15A2.5 2.5 0 0 1 22 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 18.5v-13zm2.3-.5 7.7 6.2L19.7 5H4.3zM20 6.6l-7.4 6a1 1 0 0 1-1.2 0L4 6.6v11.9c0 .3.2.5.5.5h15c.3 0 .5-.2.5-.5V6.6z"/></svg></a>
+        </div>
+      </div>
+      <div class="portrait">
+        <div class="ring"><span class="sat"></span></div>
+        <div class="ring r2"><span class="sat"></span></div>
+        <div class="img"><img src="portrait.png" alt="Portrait of Anandu Babu"></div>
+        <div class="float-tag t1">🛰️ Thesis: <b>ML surrogate models</b></div>
+        <div class="float-tag t2">⚡ <b>FastAPI · Docker · ONNX</b></div>
+        <div class="float-tag t3">📈 <b>Sensor & time-series</b></div>
+      </div>
+    </header>
+
+    <div class="stats rv">
+      <div class="stat"><div class="n" data-count="11">0</div><div class="l">months data science internship (Ekoch)</div></div>
+      <div class="stat"><div class="n" data-count="5">0</div><div class="l">end-to-end ML / robotics projects</div></div>
+      <div class="stat"><div class="n">ms</div><div class="l">surrogate inference instead of slow physics simulation</div></div>
+      <div class="stat"><div class="n">C1</div><div class="l">English · German A2 and improving</div></div>
+    </div>
+  </div>
+
+  <div class="marquee"><div class="track mono" id="track"></div></div>
+
+  <section id="about">
+    <div class="wrap about">
+      <div class="rv">
+        <div class="kicker mono">01 · About</div>
+        <h2>From physics simulations and sensors to models that ship.</h2>
+        <p>I studied Electrical and Electronics Engineering and I'm completing my MSc in Electromobility (ACES) at FAU Erlangen-Nürnberg. My master's thesis at the Institute FAPS builds an ML-enabled digital-twin prototype for satellite constellation design.</p>
+        <p>Before that I spent eleven months as a data science intern at Ekoch, building real-time sensor-data pipelines on PSoC 6 hardware. I enjoy the whole path: understanding the data, choosing the right model, evaluating it honestly, and packaging it so others can use it.</p>
+      </div>
+      <div class="focus rv">
+        <div class="fcard"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><ellipse cx="12" cy="12" rx="10" ry="4.5"/><ellipse cx="12" cy="12" rx="10" ry="4.5" transform="rotate(60 12 12)"/></svg></div><h4>Surrogate modelling</h4><p>XGBoost & neural networks replacing slow simulations.</p></div>
+        <div class="fcard"><div class="ic"><svg viewBox="0 0 24 24"><path d="M2 12h3l2-6 4 12 3-9 2 3h6"/></svg></div><h4>Signals & time series</h4><p>Filtering, FFT, features and anomaly detection.</p></div>
+        <div class="fcard"><div class="ic"><svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg></div><h4>Embedded & edge AI</h4><p>PSoC 6 data acquisition, low-latency inference.</p></div>
+        <div class="fcard"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 7h16v10H4z"/><path d="M8 11h3M8 14h6"/><path d="M4 7l3-3h10l3 3"/></svg></div><h4>Model deployment</h4><p>FastAPI, Docker and ONNX Runtime services.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <div class="rv">
+        <div class="kicker mono">02 · Selected work</div>
+        <h2>Projects</h2>
+        <p class="sub">Interactive illustrations sit next to each project. They show the idea behind the work; they are animations, not live results.</p>
+      </div>
+      <div class="filters rv" id="filters">
+        <button class="on" data-f="all">All</button>
+        <button data-f="ml">Machine learning</button>
+        <button data-f="signal">Signals & embedded</button>
+        <button data-f="deploy">Deployment</button>
+        <button data-f="robotics">Robotics & vision</button>
+      </div>
+      <div class="grid">
+        <article class="card wide rv" data-t="ml">
+          <div class="viz"><canvas id="v-orbit"></canvas><span class="cap mono">CONSTELLATION COVERAGE · ILLUSTRATION</span></div>
+          <div class="body">
+            <div class="meta mono">Master's thesis · Institute FAPS, FAU · since 03/2026</div>
+            <h3>ML-enabled digital twin for satellite constellation design</h3>
+            <p>Surrogate models that predict European satellite coverage (45–70° N) in milliseconds instead of running slow physics simulations.</p>
+            <ul>
+              <li>Modular Python pipeline with OrbitPy and EO-Sim (J2 orbit propagation), NumPy and Pandas to generate and manage large simulation datasets.</li>
+              <li>Training configurations sampled with Latin Hypercube Sampling; targets: coverage percentage, maximum gap and mean revisit time.</li>
+              <li>XGBoost and neural network models trained and evaluated in Docker/WSL with scikit-learn and Git.</li>
+              <li>Integrated into digital-twin workflows for design optimisation; validation planned with Iridium and OneWeb TLE data.</li>
+            </ul>
+            <div class="chips"><span class="chip">Python</span><span class="chip">XGBoost</span><span class="chip">Neural networks</span><span class="chip">OrbitPy / EO-Sim</span><span class="chip">LHS</span><span class="chip">Docker</span></div>
+          </div>
+        </article>
+
+        <article class="card rv" data-t="deploy">
+          <div class="viz"><canvas id="v-api"></canvas><span class="cap mono">REQUEST FLOW · ILLUSTRATION</span></div>
+          <div class="body">
+            <div class="meta mono">Project · 01/2026 – 03/2026</div>
+            <h3>Real-time ML inference API</h3>
+            <p>An anomaly-detection model served as a REST API with FastAPI in Docker, optimised with ONNX Runtime quantisation.</p>
+            <ul><li>Pydantic input validation, batch inference, health-check and logging endpoints.</li><li>Benchmarked p50/p95 latency and requests per second.</li></ul>
+            <div class="chips"><span class="chip">FastAPI</span><span class="chip">Docker</span><span class="chip">ONNX Runtime</span><span class="chip">Pydantic</span><span class="chip">scikit-learn</span></div>
+            <a class="more" href="https://github.com/anandubabu/inference-api" target="_blank" rel="noopener">View repository →</a>
+          </div>
+        </article>
+
+        <article class="card rv" data-t="signal">
+          <div class="viz"><canvas id="v-signal"></canvas><span class="cap mono">RAW vs FILTERED SIGNAL · ILLUSTRATION</span></div>
+          <div class="body">
+            <div class="meta mono">Internship · Ekoch · 02/2025 – 12/2025</div>
+            <h3>Real-time signal preprocessing for neonatal ventilator control</h3>
+            <p>Real-time ventilator signal pipelines with PSoC 6 and Python, using CuPy and PyQtGraph for GPU-based processing and visualisation.</p>
+            <ul><li>Median filtering, baseline correction and adaptive normalisation.</li><li>Sensor data for breathing, movement and non-breathing states, prepared for LSTM-based respiratory event and trigger prediction.</li></ul>
+            <div class="chips"><span class="chip">PSoC 6</span><span class="chip">Python</span><span class="chip">CuPy</span><span class="chip">PyQtGraph</span><span class="chip">FFT</span></div>
+          </div>
+        </article>
+
+        <article class="card rv" data-t="ml signal">
+          <div class="viz"><canvas id="v-anom"></canvas><span class="cap mono">ANOMALY SCORES · ILLUSTRATION</span></div>
+          <div class="body">
+            <div class="meta mono">Project · 06/2025 – 10/2025</div>
+            <h3>Edge-AI anomaly detection system</h3>
+            <p>Anomaly detection on real-time sensor data acquired with PSoC 6: filtering, windowing and time-series feature extraction.</p>
+            <ul><li>Isolation Forest, Random Forest and autoencoder models with CUDA-accelerated training, optimised for low-latency inference.</li><li>Evaluated with accuracy, precision, recall, F1-score and ROC-AUC.</li></ul>
+            <div class="chips"><span class="chip">Isolation Forest</span><span class="chip">Autoencoder</span><span class="chip">CUDA</span><span class="chip">Time series</span></div>
+          </div>
+        </article>
+
+        <article class="card rv" data-t="robotics">
+          <div class="viz"><canvas id="v-track"></canvas><span class="cap mono">CONES → CENTRELINE · ILLUSTRATION</span></div>
+          <div class="body">
+            <div class="meta mono">Project · 01/2024 – 03/2024</div>
+            <h3>ROS 2 path planning for an autonomous EV racing car</h3>
+            <p>Path planning on Ubuntu from LiDAR, camera, IMU and wheel-encoder inputs; cone detections turned into track boundaries and a centreline.</p>
+            <ul><li>Planning logic as ROS 2 nodes, topics, publishers and subscribers.</li><li>Sensor data, trajectories and vehicle motion visualised in RViz and Gazebo.</li></ul>
+            <div class="chips"><span class="chip">ROS 2</span><span class="chip">LiDAR</span><span class="chip">RViz</span><span class="chip">Gazebo</span></div>
+          </div>
+        </article>
+
+        <article class="card rv" data-t="robotics ml">
+          <div class="viz"><canvas id="v-cv"></canvas><span class="cap mono">DETECT & TRACK · ILLUSTRATION</span></div>
+          <div class="body">
+            <div class="meta mono">Project · 02/2024 – 05/2024</div>
+            <h3>Computer-vision object detection system</h3>
+            <p>An OpenCV pipeline for object detection and tracking with image preprocessing, feature extraction and CNN-based classification, aimed at embedded vision.</p>
+            <div class="chips"><span class="chip">OpenCV</span><span class="chip">CNN</span><span class="chip">Python</span><span class="chip">Edge AI</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="rv"><div class="kicker mono">How I work</div><h2>From raw data to a running model</h2><p class="sub">The same five steps run through my thesis, internship and projects.</p></div>
+      <div class="flowrow rv">
+        <div class="step"><div class="k mono">01</div><h4>Understand</h4><p>Physics, sensors and the question behind the data.</p></div>
+        <div class="step"><div class="k mono">02</div><h4>Prepare</h4><p>Pipelines, filtering, sampling and features.</p></div>
+        <div class="step"><div class="k mono">03</div><h4>Model</h4><p>From XGBoost to neural networks — the simplest that works.</p></div>
+        <div class="step"><div class="k mono">04</div><h4>Evaluate</h4><p>Clean splits, honest metrics, find where it fails.</p></div>
+        <div class="step"><div class="k mono">05</div><h4>Deploy</h4><p>APIs, containers and optimised inference.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="wrap cols">
+      <div>
+        <div class="rv"><div class="kicker mono">03 · Experience</div><h2>Where I've worked</h2></div>
+        <div class="tl">
+          <div class="ti rv"><time class="mono">03/2026 — present</time><h3>Master Thesis Student (Working Student)</h3><div class="org">Institute FAPS, FAU Erlangen-Nürnberg · Nuremberg</div>
+            <ul><li>ML surrogate models (XGBoost, neural networks) for satellite constellation coverage.</li><li>Simulation data pipeline with OrbitPy / EO-Sim; digital-twin integration.</li></ul></div>
+          <div class="ti rv"><time class="mono">02/2025 — 12/2025</time><h3>Data Science Intern</h3><div class="org">Ekoch · Braunschweig</div>
+            <ul><li>Real-time sensor-data preprocessing pipelines in Python for PSoC 6 signal acquisition.</li><li>Migrated MATLAB signal-processing algorithms to Python; FFT and time-frequency features for anomaly detection.</li></ul></div>
+          <div class="ti rv"><time class="mono">11/2024 — 09/2025</time><h3>Working Student, Project Work</h3><div class="org">Institute FAPS, FAU Erlangen-Nürnberg · Nuremberg</div>
+            <ul><li>Six Sigma DMAIC and MCDM evaluation of EV battery probe suppliers.</li><li>Python dashboard for supplier quality, lifecycle and sustainability data.</li></ul></div>
+          <div class="ti rv"><time class="mono">10/2023 — 12/2023</time><h3>Student Intern, Data Science</h3><div class="org">Entri Elevate · Kerala, India</div>
+            <ul><li>EDA, ML models with Python, Pandas, NumPy and scikit-learn; Power BI and MySQL.</li></ul></div>
+        </div>
+      </div>
+      <div>
+        <div class="rv"><div class="kicker mono">Education</div><h2>Studies</h2></div>
+        <div class="edu">
+          <div class="ecard rv"><time class="mono">12/2022 — present</time><h4>MSc Electromobility (ACES)</h4><p>Friedrich-Alexander-Universität Erlangen-Nürnberg<br>Thesis: ML-Enabled Digital Twin Prototype for Satellite Constellation Design</p></div>
+          <div class="ecard rv"><time class="mono">05/2017 — 09/2021</time><h4>Bachelor's in Electrical & Electronics Engineering</h4><p>College of Engineering Chengannur, Kerala, India<br>Final-year project: automatic speed reduction with regenerative braking (Arduino C/C++, ATmega328P)</p></div>
+          <div class="ecard rv"><h4>Languages</h4>
+            <div class="lang">
+              <div><div class="lrow"><span>English</span><span>C1 · proficient</span></div><div class="bar"><i data-w="85"></i></div></div>
+              <div><div class="lrow"><span>German</span><span>A2 · improving</span></div><div class="bar"><i data-w="33"></i></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <div class="rv"><div class="kicker mono">04 · Toolkit</div><h2>Skills & tools</h2><p class="sub">Highlighted tools are the ones I use most; the rest I have used in projects.</p></div>
+      <div class="skills">
+        <div class="scard rv"><h4><span></span>Machine learning & data</h4><div class="tags">
+          <span class="tag core">Python</span><span class="tag core">scikit-learn</span><span class="tag core">XGBoost</span><span class="tag core">NumPy</span><span class="tag core">Pandas</span><span class="tag">PyTorch</span><span class="tag">TensorFlow</span><span class="tag">CuPy</span><span class="tag">OpenCV</span><span class="tag">SQL (MySQL)</span><span class="tag">MATLAB</span><span class="tag">Power BI</span></div></div>
+        <div class="scard rv"><h4><span></span>Methods</h4><div class="tags">
+          <span class="tag core">Surrogate modelling</span><span class="tag core">Anomaly detection</span><span class="tag core">Time-series features</span><span class="tag">FFT & time-frequency</span><span class="tag">Signal filtering</span><span class="tag">Computer vision</span><span class="tag">Latin Hypercube Sampling</span><span class="tag">Model evaluation (P/R/F1/ROC-AUC)</span><span class="tag">Six Sigma DMAIC</span></div></div>
+        <div class="scard rv"><h4><span></span>Deployment & embedded</h4><div class="tags">
+          <span class="tag core">FastAPI</span><span class="tag core">Docker</span><span class="tag core">ONNX Runtime</span><span class="tag core">Git</span><span class="tag">Pydantic</span><span class="tag">Linux / WSL</span><span class="tag">PSoC 6</span><span class="tag">ROS 2 · RViz · Gazebo</span><span class="tag">CUDA</span><span class="tag">Arduino · C/C++ (basic)</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap rv">
+      <div class="kicker mono">05 · Contact</div>
+      <h2>Looking for a junior <span style="background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent">ML / AI engineer</span>? Let's talk.</h2>
+      <p>I'm available immediately for full-time roles in ML engineering, applied AI, edge AI or data science anywhere in Germany, and happy to relocate.</p>
+      <a class="mail mono" href="mailto:babuanandu1998@gmail.com">babuanandu1998@gmail.com</a>
+      <div class="btns" style="justify-content:center">
+        <a class="btn p" href="mailto:babuanandu1998@gmail.com">Send an email</a>
+        <a class="btn" href="https://linkedin.com/in/anandu-babu-039231221" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="btn" href="https://github.com/anandubabu" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap"><span>© 2026 Anandu Babu · Bremerhaven, Germany</span><span class="mono">Built with plain HTML, CSS & canvas</span></div></footer>
+
+<script>
+(()=>{
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const DPR=Math.min(window.devicePixelRatio||1,2);
+function fit(c){const r=c.getBoundingClientRect();c.width=Math.max(1,r.width*DPR);c.height=Math.max(1,r.height*DPR);const x=c.getContext('2d');x.setTransform(DPR,0,0,DPR,0,0);return [x,r.width,r.height];}
+const vis=new Set();const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting?vis.add(e.target):vis.delete(e.target)),{threshold:.05});
+
+/* background: stars + network + orbit */
+const bg=document.getElementById('bg');let B,bw,bh,pts=[];
+function initBg(){[B,bw,bh]=fit(bg);const n=Math.round(Math.min(90,bw*bh/16000));pts=Array.from({length:n},()=>({x:Math.random()*bw,y:Math.random()*bh,vx:(Math.random()-.5)*.25,vy:(Math.random()-.5)*.25,r:Math.random()*1.6+.4}));}
+let mouse={x:-999,y:-999};addEventListener('mousemove',e=>{mouse.x=e.clientX;mouse.y=e.clientY});
+function drawBg(t){B.clearRect(0,0,bw,bh);
+  const g=B.createRadialGradient(bw*.85,bh*1.15,50,bw*.85,bh*1.15,bh*1.1);g.addColorStop(0,'rgba(40,110,190,.28)');g.addColorStop(1,'rgba(7,15,28,0)');B.fillStyle=g;B.fillRect(0,0,bw,bh);
+  for(const p of pts){p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>bw)p.vx*=-1;if(p.y<0||p.y>bh)p.vy*=-1;}
+  for(let i=0;i<pts.length;i++){const a=pts[i];for(let j=i+1;j<pts.length;j++){const b=pts[j];const d=Math.hypot(a.x-b.x,a.y-b.y);if(d<130){B.strokeStyle=`rgba(94,230,208,${(1-d/130)*.14})`;B.lineWidth=1;B.beginPath();B.moveTo(a.x,a.y);B.lineTo(b.x,b.y);B.stroke();}}
+    const dm=Math.hypot(a.x-mouse.x,a.y-mouse.y);if(dm<160){B.strokeStyle=`rgba(90,169,255,${(1-dm/160)*.35})`;B.beginPath();B.moveTo(a.x,a.y);B.lineTo(mouse.x,mouse.y);B.stroke();}
+    B.fillStyle='rgba(200,230,255,.6)';B.beginPath();B.arc(a.x,a.y,a.r,0,7);B.fill();}
+}
+
+/* thesis: earth + orbits + coverage */
+function orbitViz(c){let [x,w,h]=fit(c);const sats=[];for(let p=0;p<4;p++)for(let s=0;s<6;s++)sats.push({p,ph:s/6*Math.PI*2+p*.4});
+  return t=>{if(c.width!==Math.round(c.getBoundingClientRect().width*DPR))[x,w,h]=fit(c);
+    x.clearRect(0,0,w,h);const cx=w/2,cy=h/2,R=Math.min(w,h)*.27;
+    const g=x.createRadialGradient(cx-R*.3,cy-R*.3,R*.1,cx,cy,R);g.addColorStop(0,'#1d4f86');g.addColorStop(1,'#0b2240');x.fillStyle=g;x.beginPath();x.arc(cx,cy,R,0,7);x.fill();
+    // coverage band 45-70N
+    x.save();x.beginPath();x.arc(cx,cy,R,0,7);x.clip();const y1=cy-R*Math.sin(70*Math.PI/180),y2=cy-R*Math.sin(45*Math.PI/180);
+    x.fillStyle='rgba(94,230,208,.18)';x.fillRect(cx-R,y1,2*R,y2-y1);
+    for(let i=-4;i<=4;i++){x.strokeStyle='rgba(140,200,255,.18)';x.beginPath();x.ellipse(cx,cy,Math.abs(R*i/4.5),R,0,0,7);x.stroke();}
+    for(let i=-3;i<=3;i++){const yy=cy+R*i/3.6;x.beginPath();x.moveTo(cx-R,yy);x.lineTo(cx+R,yy);x.stroke();}
+    x.restore();x.strokeStyle='rgba(94,230,208,.6)';x.lineWidth=1.5;x.beginPath();x.arc(cx,cy,R,0,7);x.stroke();
+    x.fillStyle='rgba(94,230,208,.9)';x.font='11px JetBrains Mono, monospace';x.fillText('45–70° N',cx+R+8,(y1+y2)/2+4);
+    for(let p=0;p<4;p++){const tilt=-0.9+p*0.6,rx=R*1.75,ry=R*0.55;x.strokeStyle=`rgba(90,169,255,${.22+p*.05})`;x.lineWidth=1;x.beginPath();x.ellipse(cx,cy,rx,ry,tilt,0,7);x.stroke();}
+    for(const s of sats){const tilt=-0.9+s.p*0.6,rx=R*1.75,ry=R*0.55,a=s.ph+t*0.00035*(1+s.p*.15);const px=rx*Math.cos(a),py=ry*Math.sin(a);const X=cx+px*Math.cos(tilt)-py*Math.sin(tilt),Y=cy+px*Math.sin(tilt)+py*Math.cos(tilt);const front=Math.sin(a)>0;
+      if(front){x.strokeStyle='rgba(94,230,208,.18)';x.beginPath();x.moveTo(X,Y);x.lineTo(cx+(X-cx)*.55,cy+(Y-cy)*.55);x.stroke();}
+      x.fillStyle=front?'#dffaff':'rgba(160,200,230,.45)';x.beginPath();x.arc(X,Y,front?3.2:2.2,0,7);x.fill();}
+  };}
+
+/* api flow */
+function apiViz(c){let [x,w,h]=fit(c);const boxes=['Client','FastAPI','ONNX','Response'];let parts=[];let last=0;
+  return t=>{if(c.width!==Math.round(c.getBoundingClientRect().width*DPR))[x,w,h]=fit(c);x.clearRect(0,0,w,h);
+    const n=boxes.length,bw2=Math.min(96,w/5.2),gap=(w-n*bw2)/(n+1),y=h*.36;const xs=boxes.map((_,i)=>gap+i*(bw2+gap));
+    for(let i=0;i<n-1;i++){x.strokeStyle='rgba(94,230,208,.35)';x.setLineDash([4,5]);x.beginPath();x.moveTo(xs[i]+bw2,y+18);x.lineTo(xs[i+1],y+18);x.stroke();x.setLineDash([]);}
+    boxes.forEach((b,i)=>{x.fillStyle='#10233b';x.strokeStyle=i===2?'#9b8cff':'#5ee6d0';x.lineWidth=1.3;x.beginPath();x.roundRect(xs[i],y,bw2,36,8);x.fill();x.stroke();x.fillStyle='#e6f2ff';x.font='12px JetBrains Mono, monospace';x.textAlign='center';x.fillText(b,xs[i]+bw2/2,y+22);});
+    if(t-last>420){parts.push({s:t});last=t;}parts=parts.filter(p=>t-p.s<2600);
+    for(const p of parts){const k=(t-p.s)/2600;const X=xs[0]+bw2+k*(xs[n-1]-xs[0]-bw2);x.fillStyle='#5ee6d0';x.shadowColor='#5ee6d0';x.shadowBlur=10;x.beginPath();x.arc(X,y+18,3.5,0,7);x.fill();x.shadowBlur=0;}
+    // latency histogram (illustrative)
+    const base=h*.9,bars=24,bwid=(w-60)/bars;x.textAlign='left';
+    for(let i=0;i<bars;i++){const v=Math.exp(-Math.pow((i-7)/4.2,2))+.08*Math.exp(-Math.pow((i-17)/2.5,2));const hh=v*(h*.32)*(.92+.08*Math.sin(t*.002+i));x.fillStyle=i<=10?'rgba(94,230,208,.7)':'rgba(155,140,255,.7)';x.fillRect(30+i*bwid,base-hh,bwid-3,hh);}
+    x.fillStyle='#8fa7bf';x.font='10.5px JetBrains Mono, monospace';x.fillText('latency distribution  ·  p50 | p95',30,base+13);
+  };}
+
+/* signal */
+function sigViz(c){let [x,w,h]=fit(c);const N=260;const raw=[];let seed=1;const rnd=()=>(seed=(seed*16807)%2147483647)/2147483647;
+  for(let i=0;i<N;i++)raw.push(0);let off=0;
+  return t=>{if(c.width!==Math.round(c.getBoundingClientRect().width*DPR))[x,w,h]=fit(c);x.clearRect(0,0,w,h);off+=reduce?0:1.2;
+    const f=i=>{const k=(i+off)/40;return Math.sin(k)*.8+Math.sin(k*.5)*.25+0.35*Math.sin((i+off)/300);};
+    const y0=h*.45,A=h*.2;const sm=[];for(let i=0;i<N;i++){const clean=f(i);const noise=(Math.sin((i+off)*12.9898)*43758.5453%1)*.5;const spike=((i+Math.floor(off))%97===0)?1.4:0;raw[i]=clean+noise*.6+spike;}
+    for(let i=0;i<N;i++){const win=raw.slice(Math.max(0,i-4),i+5).slice().sort((a,b)=>a-b);sm.push(win[win.length>>1]);}
+    const base=sm.reduce((a,b)=>a+b,0)/N;
+    x.lineWidth=1;x.strokeStyle='rgba(255,197,107,.55)';x.beginPath();raw.forEach((v,i)=>{const X=i/(N-1)*w,Y=y0-(v-base)*A;i?x.lineTo(X,Y):x.moveTo(X,Y)});x.stroke();
+    x.lineWidth=2.2;x.strokeStyle='#5ee6d0';x.shadowColor='#5ee6d0';x.shadowBlur=8;x.beginPath();sm.forEach((v,i)=>{const X=i/(N-1)*w,Y=y0-(v-base)*A;i?x.lineTo(X,Y):x.moveTo(X,Y)});x.stroke();x.shadowBlur=0;
+    x.font='11px JetBrains Mono, monospace';x.fillStyle='rgba(255,197,107,.9)';x.fillText('● raw',14,38);x.fillStyle='#5ee6d0';x.fillText('● median filtered',62,38);
+    // spectrum bars
+    const bars=32,bwid=(w-28)/bars;for(let i=0;i<bars;i++){const v=Math.exp(-Math.pow((i-5)/2.2,2))+.35*Math.exp(-Math.pow((i-11)/1.6,2))+.06*(1+Math.sin(t*.003+i));const hh=v*h*.17;x.fillStyle='rgba(90,169,255,.55)';x.fillRect(14+i*bwid,h*.9-hh,bwid-3,hh);}
+    x.fillStyle='#8fa7bf';x.fillText('FFT magnitude',14,h*.9+13);
+  };}
+
+/* anomaly scatter */
+function anomViz(c){let [x,w,h]=fit(c);let seed=7;const r=()=>(seed=(seed*16807)%2147483647)/2147483647;const g=()=>{let u=r()||.001,v=r();return Math.sqrt(-2*Math.log(u))*Math.cos(2*Math.PI*v)};
+  const P=[];for(let i=0;i<170;i++)P.push({x:.45+g()*.11,y:.5+g()*.12,a:false});for(let i=0;i<12;i++)P.push({x:.1+r()*.8,y:.12+r()*.76,a:true});P.forEach(p=>{if(p.a&&Math.hypot(p.x-.45,p.y-.5)<.22){p.x=p.x<.45?.12:.85}});
+  return t=>{if(c.width!==Math.round(c.getBoundingClientRect().width*DPR))[x,w,h]=fit(c);x.clearRect(0,0,w,h);
+    const cx=.45*w,cy=.5*h;for(let k=4;k>=1;k--){x.strokeStyle=`rgba(94,230,208,${.08+k*.05})`;x.beginPath();x.ellipse(cx,cy,w*.07*k,h*.08*k,0,0,7);x.stroke();}
+    const scan=(t*.0004)%1;
+    for(const p of P){const X=p.x*w,Y=p.y*h;if(p.a){const on=Math.abs(p.x-scan)<.06;x.strokeStyle='#ff7a8a';x.lineWidth=on?2.5:1.4;x.beginPath();x.arc(X,Y,on?8:6,0,7);x.stroke();x.fillStyle='#ff7a8a';x.beginPath();x.arc(X,Y,2.4,0,7);x.fill();}
+      else{x.fillStyle='rgba(160,215,255,.75)';x.beginPath();x.arc(X,Y,2.2,0,7);x.fill();}}
+    x.strokeStyle='rgba(155,140,255,.5)';x.beginPath();x.moveTo(scan*w,0);x.lineTo(scan*w,h);x.stroke();
+    x.font='11px JetBrains Mono, monospace';x.fillStyle='#a8f0e4';x.fillText('● normal',14,h-12);x.fillStyle='#ff9aa6';x.fillText('◯ anomaly',90,h-12);
+  };}
+
+/* track */
+function trackViz(c){let [x,w,h]=fit(c);
+  return t=>{if(c.width!==Math.round(c.getBoundingClientRect().width*DPR))[x,w,h]=fit(c);x.clearRect(0,0,w,h);
+    const cx=w/2,cy=h/2,ax=w*.36,ay=h*.3;const path=s=>{const a=s*Math.PI*2;const r=1+.18*Math.sin(3*a);return [cx+ax*r*Math.cos(a),cy+ay*r*Math.sin(a)*(1+.15*Math.cos(2*a))];};
+    const M=48;for(let i=0;i<M;i++){const s=i/M;const [px,py]=path(s);const [qx,qy]=path(s+.001);const nx=-(qy-py),ny=qx-px,l=Math.hypot(nx,ny)||1;const o=Math.min(w,h)*.055;
+      x.fillStyle='#ffc56b';x.beginPath();x.moveTo(px+nx/l*o,py+ny/l*o-5);x.lineTo(px+nx/l*o-4,py+ny/l*o+3);x.lineTo(px+nx/l*o+4,py+ny/l*o+3);x.fill();
+      x.fillStyle='#5aa9ff';x.beginPath();x.moveTo(px-nx/l*o,py-ny/l*o-5);x.lineTo(px-nx/l*o-4,py-ny/l*o+3);x.lineTo(px-nx/l*o+4,py-ny/l*o+3);x.fill();}
+    x.setLineDash([6,6]);x.strokeStyle='rgba(94,230,208,.8)';x.lineWidth=1.6;x.beginPath();for(let i=0;i<=200;i++){const [px,py]=path(i/200);i?x.lineTo(px,py):x.moveTo(px,py)}x.stroke();x.setLineDash([]);
+    const s=(t*.00006)%1;const [px,py]=path(s);const [qx,qy]=path(s+.004);const ang=Math.atan2(qy-py,qx-px);
+    x.save();x.translate(px,py);x.rotate(ang);x.fillStyle='rgba(94,230,208,.12)';x.beginPath();x.moveTo(0,0);x.arc(0,0,60,-.5,.5);x.fill();x.fillStyle='#eaffff';x.fillRect(-9,-5,18,10);x.restore();
+    x.font='11px JetBrains Mono, monospace';x.fillStyle='#ffd796';x.fillText('▲ left cones',14,h-12);x.fillStyle='#9fd2ff';x.fillText('▲ right cones',110,h-12);x.fillStyle='#a8f0e4';x.fillText('-- centreline',212,h-12);
+  };}
+
+/* cv detection */
+function cvViz(c){let [x,w,h]=fit(c);const objs=[{x:.2,y:.55,w:.16,h:.26,v:.00008,l:'object 0.94'},{x:.6,y:.35,w:.13,h:.22,v:-.00006,l:'object 0.88'},{x:.45,y:.7,w:.1,h:.16,v:.00011,l:'object 0.91'}];
+  return t=>{if(c.width!==Math.round(c.getBoundingClientRect().width*DPR))[x,w,h]=fit(c);x.clearRect(0,0,w,h);
+    x.strokeStyle='rgba(90,169,255,.08)';for(let i=0;i<w;i+=22){x.beginPath();x.moveTo(i,0);x.lineTo(i,h);x.stroke();}for(let j=0;j<h;j+=22){x.beginPath();x.moveTo(0,j);x.lineTo(w,j);x.stroke();}
+    objs.forEach((o,i)=>{const X=((o.x+Math.sin(t*o.v*6+i)*.12)%1)*w,Y=(o.y+Math.cos(t*o.v*5+i)*.06)*h,W=o.w*w,H=o.h*h;
+      const g=x.createRadialGradient(X,Y,2,X,Y,Math.max(W,H)*.6);g.addColorStop(0,'rgba(155,140,255,.55)');g.addColorStop(1,'rgba(155,140,255,0)');x.fillStyle=g;x.beginPath();x.ellipse(X,Y,W*.4,H*.4,0,0,7);x.fill();
+      x.strokeStyle='#5ee6d0';x.lineWidth=1.6;x.strokeRect(X-W/2,Y-H/2,W,H);const L=10;x.lineWidth=3;
+      [[-1,-1],[1,-1],[-1,1],[1,1]].forEach(([sx,sy])=>{x.beginPath();x.moveTo(X+sx*W/2,Y+sy*H/2-sy*L);x.lineTo(X+sx*W/2,Y+sy*H/2);x.lineTo(X+sx*W/2-sx*L,Y+sy*H/2);x.stroke();});
+      x.fillStyle='#5ee6d0';x.fillRect(X-W/2,Y-H/2-17,86,16);x.fillStyle='#06121f';x.font='10.5px JetBrains Mono, monospace';x.fillText(o.l,X-W/2+5,Y-H/2-5);});
+  };}
+
+const vizzes=[['v-orbit',orbitViz],['v-api',apiViz],['v-signal',sigViz],['v-anom',anomViz],['v-track',trackViz],['v-cv',cvViz]].map(([id,f])=>{const c=document.getElementById(id);io.observe(c);return [c,f(c)];});
+initBg();addEventListener('resize',()=>{initBg();vizzes.forEach(v=>{const c=v[0];fit(c);})});
+function loop(t){drawBg(t);for(const [c,d] of vizzes)if(vis.has(c))d(t);if(!reduce)requestAnimationFrame(loop);}
+requestAnimationFrame(loop);if(reduce){vizzes.forEach(([c,d])=>d(0));}
+
+/* typed */
+const roles=['Machine Learning Engineer','Surrogate models for physics simulations','Sensor & time-series data','Edge AI · FastAPI · Docker · ONNX'];const el=document.getElementById('typed');let ri=0,ci=0,del=false;
+function type(){const s=roles[ri];el.innerHTML=s.slice(0,ci)+'<span class="cur"></span>';if(!del&&ci<s.length){ci++;setTimeout(type,55)}else if(!del){del=true;setTimeout(type,1800)}else if(ci>0){ci--;setTimeout(type,25)}else{del=false;ri=(ri+1)%roles.length;setTimeout(type,300)}}
+reduce?el.textContent=roles[0]:type();
+
+/* marquee */
+const items=['Python','XGBoost','PyTorch','scikit-learn','FastAPI','Docker','ONNX Runtime','OpenCV','ROS 2','PSoC 6','CuPy','FFT','Anomaly detection','Surrogate models','Time series','Git','Linux'];
+const tr=document.getElementById('track');tr.innerHTML=[...items,...items].map(s=>`<span><i>◆</i>${s}</span>`).join('');
+
+/* reveal + counters + bars */
+const ro=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const n=e.target;n.classList.add('in');
+  n.querySelectorAll('[data-count]').forEach(k=>{const end=+k.dataset.count;let v=0;const st=performance.now();const step=now=>{v=Math.min(end,Math.round(end*(now-st)/1000));k.textContent=v+(k.dataset.count==='11'?'':'');if(v<end)requestAnimationFrame(step)};requestAnimationFrame(step);});
+  n.querySelectorAll('.bar i').forEach(b=>b.style.width=b.dataset.w+'%');ro.unobserve(n);}),{threshold:.15});
+document.querySelectorAll('.rv').forEach(n=>ro.observe(n));
+
+/* filters */
+document.getElementById('filters').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;document.querySelectorAll('#filters button').forEach(x=>x.classList.toggle('on',x===b));const f=b.dataset.f;
+  document.querySelectorAll('.card').forEach(c=>c.classList.toggle('hide',!(f==='all'||c.dataset.t.split(' ').includes(f))));});
+
+/* nav progress + active */
+const prog=document.getElementById('prog');const secs=[...document.querySelectorAll('section[id]')];const links=[...document.querySelectorAll('.links a')];
+addEventListener('scroll',()=>{const s=scrollY/(document.documentElement.scrollHeight-innerHeight);prog.style.width=(s*100)+'%';
+  let cur='';for(const sec of secs)if(sec.getBoundingClientRect().top<140)cur=sec.id;links.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+cur));},{passive:true});
+})();
+</script>
+</body>
+</html>
